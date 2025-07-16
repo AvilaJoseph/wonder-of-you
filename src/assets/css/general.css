@@ -4,7 +4,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    min-height: 100vh;
+    min-height: 80vh;
     overflow: hidden;
 }
 
@@ -43,6 +43,7 @@
     padding: 0 70px;
     box-sizing: border-box;
     min-height: 80px;
+    color: #FFFFFF;
 }
 
 .logo-container{
@@ -51,12 +52,12 @@
 
 .logo-container h2{
     font-size: 28px;
-    font-family: 'Gilroy', sans-serif; 
+    font-family: 'Gilroy', sans-serif;
     font-weight: 700;
     margin: 0;
+    color: #FFFFFF;
 }
 
-/* Estilos para el navbar */
 .container-info{
     display: flex;
     justify-content: center;
@@ -72,12 +73,13 @@
 }
 
 .container-info li{
-    font-family: 'Gilroy', sans-serif; 
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     cursor: pointer;
     transition: opacity 0.3s ease;
+    color: #FFFFFF;
 }
 
 .container-info li:hover{
@@ -91,11 +93,14 @@
     flex: 1;
     padding: 0 20px;
     margin-top: 30px;
+    justify-content: center;
+    text-align: center;
 }
 
 .info-central{
     text-align: center;
     max-width: 800px;
+    margin-bottom: 20px;
 }
 
 .info-central h2{
@@ -103,16 +108,70 @@
     font-weight: bold;
     font-size: 48px;
     line-height: 1.5;
-    margin: 0 0 20px 0;
-    color: #000000; 
+    margin: 0;
+    color: #FFFFFF;
 }
+
+.sub-info-central{
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
 .sub-info-central h2{
     font-family: 'Gilroy', sans-serif;
     font-weight: normal;
     font-size: 20px;
     line-height: 130%;
     margin: 0;
-    color: #000000; 
+    color: #E0E0E0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+    border-radius: 30px;
+    padding: 8px 15px;
+    width: 100%;
+    max-width: 350px;
+    backdrop-filter: blur(5px); /* Optional: adds a blur effect behind the input */
+    -webkit-backdrop-filter: blur(5px); /* For Safari */
+}
+
+.search-container input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.search-container input::placeholder {
+    color: #CCCCCC;
+    opacity: 0.8;
+}
+
+.search-container button {
+    background-color: #FF7B40; /* Orange color from the image */
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+
+.search-container button img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%); /* Makes a white search icon if original is black */
 }
 
 /* Tablet */
@@ -120,23 +179,23 @@
     .container-navbar{
         padding: 0 30px;
     }
-    
+
     .logo-container h2{
         font-size: 24px;
     }
-    
+
     .container-info ul{
         gap: 30px;
     }
-    
+
     .container-info li{
         font-size: 18px;
     }
-    
+
     .info-central h2{
         font-size: 40px;
     }
-    
+
     .container-header-info{
         padding: 30px;
     }
@@ -147,25 +206,29 @@
     .container-navbar{
         padding: 0 20px;
     }
-    
+
     .logo-container h2{
         font-size: 22px;
     }
-    
+
     .container-info ul{
         gap: 20px;
     }
-    
+
     .container-info li{
         font-size: 16px;
     }
-    
+
     .info-central h2{
         font-size: 32px;
     }
-    
+
     .container-header-info{
         padding: 20px;
+    }
+
+    .search-container {
+        max-width: 300px;
     }
 }
 
@@ -177,38 +240,43 @@
         padding: 20px;
         gap: 20px;
     }
-    
+
     .logo-container{
         align-self: flex-start;
     }
-    
+
     .container-info{
         width: 100%;
         justify-content: flex-start;
         overflow-x: auto;
     }
-    
+
     .container-info ul{
         gap: 15px;
         min-width: max-content;
         padding: 0 5px;
     }
-    
+
     .container-info li{
         font-size: 14px;
         white-space: nowrap;
     }
-    
+
     .info-central h2{
         font-size: 24px;
     }
-    
+
     .container-header-info{
         padding: 15px;
     }
-    
+
     .container-header{
         min-height: 100vh;
+    }
+
+    .search-container {
+        width: 90%;
+        max-width: unset;
     }
 }
 
@@ -217,19 +285,19 @@
     .container-navbar{
         padding: 15px;
     }
-    
+
     .logo-container h2{
         font-size: 20px;
     }
-    
+
     .container-info li{
         font-size: 13px;
     }
-    
+
     .container-info ul{
         gap: 12px;
     }
-    
+
     .info-central h2{
         font-size: 20px;
     }
