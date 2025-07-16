@@ -1,6 +1,4 @@
 import { Route, Routes } from "react-router-dom"; // Remove BrowserRouter import
-import HomePage from "./pages/HomePage";
-import MainLayout from "./layouts/MainLayout";
 import Sidebar from "./layouts/Sidebar";
 import './style.css'
 import LandingPage from "./pages/LandingPage";
