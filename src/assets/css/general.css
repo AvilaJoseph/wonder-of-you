@@ -1,0 +1,206 @@
+@import url('./fonts.css');
+
+.container-header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-navbar{
+    width: 100%;
+    height: 13%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-sizing: border-box;
+    min-height: 80px;
+}
+
+.logo-container{
+    flex-shrink: 0;
+}
+
+.logo-container h2{
+    font-size: 28px;
+    font-family: 'Gilroy', sans-serif; 
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Estilos para el navbar */
+.container-info{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+
+.container-info ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 50px;
+}
+
+.container-info li{
+    font-family: 'Gilroy', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.container-info li:hover{
+    opacity: 0.7;
+}
+
+.container-header-info{
+    display: flex;
+    justify-content: center;
+    padding: 120px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-central{
+    text-align: center;
+    max-width: 800px;
+}
+
+.info-central h2{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 130%;
+    margin: 0;
+    color: #000000; 
+}
+.sub-info-central h2{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 130%;
+    margin: 0;
+    color: #000000; 
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .container-navbar{
+        padding: 0 30px;
+    }
+    
+    .logo-container h2{
+        font-size: 24px;
+    }
+    
+    .container-info ul{
+        gap: 30px;
+    }
+    
+    .container-info li{
+        font-size: 18px;
+    }
+    
+    .info-central h2{
+        font-size: 40px;
+    }
+    
+    .container-header-info{
+        padding: 30px;
+    }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+    .container-navbar{
+        padding: 0 20px;
+    }
+    
+    .logo-container h2{
+        font-size: 22px;
+    }
+    
+    .container-info ul{
+        gap: 20px;
+    }
+    
+    .container-info li{
+        font-size: 16px;
+    }
+    
+    .info-central h2{
+        font-size: 32px;
+    }
+    
+    .container-header-info{
+        padding: 20px;
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+    .container-navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .logo-container{
+        align-self: flex-start;
+    }
+    
+    .container-info{
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    
+    .container-info ul{
+        gap: 15px;
+        min-width: max-content;
+        padding: 0 5px;
+    }
+    
+    .container-info li{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
+    .info-central h2{
+        font-size: 24px;
+    }
+    
+    .container-header-info{
+        padding: 15px;
+    }
+}
+
+/* Mobile Extra Small */
+@media (max-width: 360px) {
+    .container-navbar{
+        padding: 15px;
+    }
+    
+    .logo-container h2{
+        font-size: 20px;
+    }
+    
+    .container-info li{
+        font-size: 13px;
+    }
+    
+    .container-info ul{
+        gap: 12px;
+    }
+    
+    .info-central h2{
+        font-size: 20px;
+    }
+}

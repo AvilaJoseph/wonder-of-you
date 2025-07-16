@@ -1,10 +1,11 @@
+import type { ReactNode } from 'react';
 
-function MainLayout({children}:any) {
+function MainLayout({children}: {children: ReactNode}) {
   return (
-    <main className="main-content">
+    <div className="main-content">
       {children}
-    </main>
+    </div>
   );
 }
 
-export default MainLayout;
+export default MainLayout
